@@ -1,9 +1,9 @@
-import 'react-native-gesture-handler';
+// In App.js in a new project
 
 import * as React from 'react';
 import { View, Text, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 function HomeScreen(props) {
   return (
@@ -24,15 +24,15 @@ function SobreScreen() {
   );
 }
 
-const Drawer = createDrawerNavigator();
+const Stack = createNativeStackNavigator();
 
 function App() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator>
-        <Drawer.Screen name="Home" component={HomeScreen} />
-        <Drawer.Screen name="Sobre" component={SobreScreen} />
-      </Drawer.Navigator>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Sobre" component={SobreScreen} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }

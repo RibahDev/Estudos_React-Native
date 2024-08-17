@@ -31,7 +31,7 @@ const Item = ({ elemento: item }) => (
     left={props => <Image {...props}
       style={styles.tinyLogo}
       source={
-        { uri: 'https://cdn.pixabay.com/photo/2024/07/17/10/25/ocean-8901157_1280.jpg' }
+        { uri: item.urlImage }
       }
     />}
     />

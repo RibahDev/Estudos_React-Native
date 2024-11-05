@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "expo-location": "^17.0.1",
+    "react-native-maps": "^1.18.2"
+  }
+}
